@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static int inp_length()
+        {
+            Console.WriteLine("Enter the length");
+            int len = Convert.ToInt32(Console.ReadLine());
+            return len;
+        }
+        static int inp_width() {
+            Console.WriteLine("Enter the width");
+            int wid = Convert.ToInt32(Console.ReadLine());
+            return wid;
+        }
+        static int cal_area(int len ,int wid){
+        int area = len * wid;
+            return area;
+        }
+        static int Peri(int le,int wi){
+        int peri = le*2 +wi*2;
+        return peri;
+        }
+        static void Display(int ar,int pe){
+        Console.WriteLine("The area is"+ar);
+            Console.WriteLine("The perimeter is" + pe);
+        }
+        static void Main(string[] args)
+        {
+           int length = inp_length ();
+            int width = inp_width();
+            int area = cal_area(length,width);
+            int peri = Peri(length, width);
+            Display(area, peri);
+            Console.ReadLine();
+        }
+    }
+}
