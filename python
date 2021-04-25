@@ -1,0 +1,21 @@
+def input_length():
+    len = int(input("Enter the length"))
+    return len
+
+def input_width():
+    wid = int(input("Enter the width"))
+    return wid
+
+def calc_area(lt,wt):
+    return lt*wt
+
+def calc_peri(le,wi):
+    return (le*2)+(wi*2)
+
+if __name__ == '__main__':
+    l = input_length()
+    w= input_width()
+    a=calc_area(l,w)
+    p=calc_peri(l,w)
+    print("The area is:" , a)
+    print("The perimeter is:" , p)
