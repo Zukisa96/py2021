@@ -1,0 +1,37 @@
+import java.util.Scanner;
+  public class Program
+    {
+static Scanner pa = new Scanner(System.in);
+        public static int inp_length()
+        {
+            System.out.println("Enter the length");
+            int len = pa.nextInt();
+            return len;
+        }
+        public static int inp_width() {
+            System.out.println("Enter the width");
+            int wid = pa.nextInt();
+            return wid;
+        }
+        public static int cal_area(int len ,int wid){
+        int area = len * wid;
+            return area;
+        }
+        public static int Peri(int le,int wi){
+        int peri = le*2 +wi*2;
+        return peri;
+        }
+       public static void Display(int ar,int pe){
+        System.out.println("The area is"+ar+"m");
+            System.out.println("The perimeter is" + pe+"m");
+        }
+        public static void Main(string[] args)
+        {
+           int length = inp_length ();
+            int width = inp_width();
+            int area = cal_area(length,width);
+            int peri = Peri(length, width);
+            Display(area, peri);
+          
+        }
+    }
