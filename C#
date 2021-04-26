@@ -28,8 +28,8 @@ namespace ConsoleApplication2
         return peri;
         }
         static void Display(int ar,int pe){
-        Console.WriteLine("The area is"+ar);
-            Console.WriteLine("The perimeter is" + pe);
+        Console.WriteLine("The area is"+ar+"m");
+            Console.WriteLine("The perimeter is" + pe+"m");
         }
         static void Main(string[] args)
         {
