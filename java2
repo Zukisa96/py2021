@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class Area{
+static Scanner area = new Scanner(System.in);
+public double len;
+public doble wid;
+public double area;
+public double peri;
+pubic Area(w,l,a,p){ 
+len = l;
+wid = w;
+area = a;
+peri = p;
+}
+public double Len(){
+System.out.println("Enter length");
+len = area.nextDouble();
+return len;
+}
+public double Wid(){
+System.out.println("Enter width");
+wid = area.nextDouble();
+return wid;
+}
+public double Are(l,w);
+double area = l*w;
+return area;
+}
+public double Peri(l,w){
+double peri = l*2+w*2;
+return peri;
+}
+public void AreaPeri(a,p){
+System.out.println("The area is "+a);
+System.out.println("The perimeter is"+p);
+}
+}
+public class Perimeter{
+Area ap = new Area(20,20,400,80);
+double len = ap.Len();
+double wid = ap.Wid();
+double area = ap.Are(len,wid);
+double peri = ap.Peri(len,wid);
+ap.AreaPeri(area,peri);
+
+}
