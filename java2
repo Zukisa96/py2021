@@ -35,11 +35,12 @@ System.out.println("The perimeter is"+p);
 }
 }
 public class Perimeter{
+publc static void main(Strings[]args){
 Area ap = new Area(20,20,400,80);
 double len = ap.Len();
 double wid = ap.Wid();
 double area = ap.Are(len,wid);
 double peri = ap.Peri(len,wid);
 ap.AreaPeri(area,peri);
-
+}
 }
